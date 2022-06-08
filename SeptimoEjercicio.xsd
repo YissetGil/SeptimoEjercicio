@@ -1,0 +1,10 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="cantidad" type="tipoCantidades">
+    </xs:element>
+    <xs:simpleType name="tipoCantidades">
+        <xs:restriction base="xs:short">
+            <xs:minInclusive value="-30"/>
+            <xs:maxInclusive value="30"/>
+        </xs:restriction>
+    </xs:simpleType>
+</xs:schema>
